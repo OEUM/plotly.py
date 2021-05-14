@@ -1545,7 +1545,8 @@ def process_dataframe_hierarchy(args):
         # we can modify df because it's a copy of the px argument
         df[count_colname] = 1
         args["values"] = count_colname
-    agg_f[count_colname] = "sum"
+    #agg_f[count_colname] = "sum"
+    agg_f[count_colname] = args["val_aggfunc"] #NEW LINE
 
     if args["color"]:
         if not _is_continuous(df, args["color"]):

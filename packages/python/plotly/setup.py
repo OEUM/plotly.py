@@ -489,7 +489,7 @@ validator_packages = [
 
 versioneer_cmds = versioneer.get_cmdclass()
 setup(
-    name="plotly",
+    name="plotly_dev",
     version=versioneer.get_version(),
     use_2to3=False,
     author="Chris P",
